@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+        }
+
+        .top-link {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #1a0dab;
+            font-size: 14px;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 272px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #q {
+            border-radius: 25px;
+            border: 1px solid lightgray;
+            width: 550px;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 5px 5px 10px  lightgrey;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 10px;
+        }
+
+        #search, #lucky {
+            background-color: rgb(245, 243, 243);
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #search:hover, #lucky:hover {
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <a href="https://www.google.com/imghp" class="top-link">Image Search</a>
+        <a href="https://www.google.com/advanced_search" class="top-link">Advanced Search</a>
+    </div>
+    <div class="main-content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo">
+        
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" id="q">
+            <div class="buttons">
+                <input type="submit" value="Google Search" id="search">
+                <input type="submit" value="I'm Feeling Lucky" name="btnI"  id="lucky">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Search</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .top-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #1a0dab;
+            font-size: 14px;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+hr{
+    border: 1px solid #dfdedb;
+    font-family: arial, sans-serif;
+}
+        h3 {
+            margin: 30px 40px 20px;
+            font-weight: normal;
+            color: #d93025;
+        }
+
+        .content {
+            margin: 0 40px 100px;
+        }
+
+        .titles {
+            color: gray;
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 800px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-row label {
+            width: 230px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .form-row input[type="text"] {
+            width: 500px;
+            font-size: 13px;
+            border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    height: 25px;
+    padding: 1px 8px;
+        }
+
+        .form-row .example {
+            font-size: 12px;
+            color: #555;
+            margin-left: 10px;
+            width: 400px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            font-size: 11px;
+            color: white;
+            background-color: #4d90fe;
+            height: 30px;
+    min-width: 120px;
+    border-radius: 3px;
+    border: 1px solid #3079ed;
+        }
+          .button{
+            display: flex;
+            justify-content: flex-end;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo">
+        <div class="top-links">
+            <a href="https://www.google.com/search" class="link">Google Search</a>
+            <a href="https://www.google.com/imghp" class="link">Image Search</a>
+        </div>
+    </div>
+
+    <h3>Advanced Search</h3>
+    <hr>
+
+    <div class="content">
+        <div class="titles">
+            <h4>Find pages with...</h4>
+            <h4>To do this in the search box:</h4>
+        </div>
+
+        <form action="https://www.google.com/search" method="GET">
+            <div class="form-row">
+                <label for="as_q">all these words:</label>
+                <input type="text" name="as_q" id="as_q">
+                <div class="example">Type the important words: tri-colour rat terrier</div>
+            </div>
+
+            <div class="form-row">
+                <label for="as_epq">this exact word or phrase:</label>
+                <input type="text" name="as_epq" id="as_epq">
+                <div class="example">Put exact words in quotes: "rat terrier"</div>
+            </div>
+
+            <div class="form-row">
+                <label for="as_oq">any of these words:</label>
+                <input type="text" name="as_oq" id="as_oq">
+                <div class="example">Type OR between all the words you want: miniature OR standard</div>
+            </div>
+
+            <div class="form-row">
+                <label for="as_eq">none of these words:</label>
+                <input type="text" name="as_eq" id="as_eq">
+                <div class="example">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+            </div>
+<div class="button">
+            <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
